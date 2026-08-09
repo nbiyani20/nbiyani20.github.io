@@ -19,6 +19,10 @@ body {
     line-height: 1.75;
 }
 
+a {
+    transition: 0.2s ease;
+}
+
 /* ================= Layout ================= */
 
 .container {
@@ -52,6 +56,7 @@ body {
     font-size: 29px;
     line-height: 1.2;
     margin-bottom: 10px;
+    color: #111;
 }
 
 .sidebar h2 {
@@ -65,46 +70,50 @@ body {
     font-size: 15px;
     color: #555;
     line-height: 1.6;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
 }
 
 .sidebar a {
     display: block;
+    width: fit-content;
     color: #0056b3;
     text-decoration: none;
-    margin-bottom: 10px;
+    margin-bottom: 9px;
     font-size: 15px;
 }
 
 .sidebar a:hover {
+    color: #003f82;
     text-decoration: underline;
 }
 
 /* ================= CV Button ================= */
 
-.sidebar .button {
+.sidebar .button,
+.button {
     display: inline-block;
     margin-top: 12px;
     padding: 10px 18px;
     background: #0056b3;
-    color: #ffffff;
+    color: #ffffff !important;
     border-radius: 5px;
     font-weight: 600;
-    text-decoration: none;
+    text-decoration: none !important;
 }
 
-.sidebar .button:hover {
+.sidebar .button:hover,
+.button:hover {
     background: #003f82;
-    color: #ffffff;
-    text-decoration: none;
+    color: #ffffff !important;
+    text-decoration: none !important;
 }
 
-/* ================= Main Content ================= */
+/* ================= Main ================= */
 
 .main {
     margin-left: 360px;
     width: calc(100% - 360px);
-    padding: 32px 55px 60px 55px;
+    padding: 32px 55px 60px;
     max-width: 1050px;
 }
 
@@ -113,8 +122,8 @@ body {
 nav {
     position: sticky;
     top: 0;
-    background: rgba(255,255,255,0.97);
-    padding: 12px 0 16px 0;
+    background: rgba(255, 255, 255, 0.97);
+    padding: 12px 0 16px;
     border-bottom: 1px solid #ddd;
     z-index: 100;
 }
@@ -126,16 +135,27 @@ nav a {
     margin-right: 26px;
     font-weight: 600;
     font-size: 15px;
+    padding-bottom: 4px;
 }
 
 nav a:hover {
     color: #0056b3;
 }
 
+/* Optional active-page styling */
+nav a.active {
+    color: #0056b3;
+    border-bottom: 2px solid #0056b3;
+}
+
 /* ================= Sections ================= */
 
 section {
     margin-top: 44px;
+}
+
+section:first-of-type {
+    margin-top: 38px;
 }
 
 h2 {
@@ -147,7 +167,7 @@ h2 {
 
 h3 {
     font-size: 20px;
-    margin-top: 26px;
+    margin-top: 30px;
     margin-bottom: 10px;
     color: #222;
 }
@@ -159,11 +179,61 @@ p {
 
 ul {
     padding-left: 22px;
+    margin-bottom: 18px;
 }
 
 li {
     margin-bottom: 7px;
     font-size: 16px;
+}
+
+/* ================= Research / Project Entries ================= */
+
+section h3 {
+    padding-top: 4px;
+}
+
+section h3:not(:first-of-type) {
+    border-top: 1px solid #eeeeee;
+    padding-top: 24px;
+}
+
+/* ================= Publications ================= */
+
+.publication {
+    margin-bottom: 28px;
+    padding-bottom: 22px;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.publication:last-child {
+    border-bottom: none;
+}
+
+.publication a {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+.publication a:hover {
+    text-decoration: underline;
+}
+
+/* ================= General Links ================= */
+
+.main a {
+    color: #0056b3;
+}
+
+.main a:hover {
+    color: #003f82;
+}
+
+/* ================= Resume iframe ================= */
+
+iframe {
+    margin-top: 15px;
+    background: #fff;
 }
 
 /* ================= Footer ================= */
@@ -227,6 +297,10 @@ footer {
 
     h2 {
         font-size: 26px;
+    }
+
+    h3 {
+        font-size: 19px;
     }
 
     p,
