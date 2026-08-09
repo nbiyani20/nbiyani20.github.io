@@ -2,185 +2,235 @@
    Nishant Biyani Website
 ========================= */
 
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-html{
-    scroll-behavior:smooth;
+html {
+    scroll-behavior: smooth;
 }
 
-body{
+body {
     font-family: Arial, Helvetica, sans-serif;
-    background:#ffffff;
-    color:#222;
-    line-height:1.7;
+    background: #ffffff;
+    color: #222;
+    line-height: 1.75;
 }
 
-.container{
-    display:flex;
-    max-width:1400px;
-    margin:auto;
+/* ================= Layout ================= */
+
+.container {
+    display: flex;
+    max-width: 1500px;
+    margin: 0 auto;
 }
 
 /* ================= Sidebar ================= */
 
-.sidebar{
-    width:300px;
-    min-height:100vh;
-    position:fixed;
-    left:0;
-    top:0;
-    padding:40px 30px;
-    background:#fafafa;
-    border-right:1px solid #e5e5e5;
+.sidebar {
+    width: 330px;
+    min-height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 36px 28px;
+    background: #fafafa;
+    border-right: 1px solid #e5e5e5;
 }
 
-.sidebar img{
-    width:180px;
-    height:180px;
-    border-radius:50%;
-    object-fit:cover;
-    margin-bottom:20px;
+.sidebar img {
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 24px;
 }
 
-.sidebar h1{
-    font-size:30px;
-    margin-bottom:8px;
+.sidebar h1 {
+    font-size: 29px;
+    line-height: 1.2;
+    margin-bottom: 10px;
 }
 
-.sidebar h2{
-    font-size:18px;
-    color:#555;
-    font-weight:400;
-    margin-bottom:15px;
+.sidebar h2 {
+    font-size: 17px;
+    color: #555;
+    font-weight: 400;
+    margin-bottom: 16px;
 }
 
-.sidebar p{
-    font-size:15px;
-    color:#555;
-    margin-bottom:10px;
+.sidebar p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 16px;
 }
 
-.sidebar a{
-    display:block;
-    color:#0056b3;
-    text-decoration:none;
-    margin-bottom:10px;
+.sidebar a {
+    display: block;
+    color: #0056b3;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 15px;
 }
 
-.sidebar a:hover{
-    color:#d62828;
+.sidebar a:hover {
+    text-decoration: underline;
 }
 
-/* ================= Main ================= */
+/* ================= CV Button ================= */
 
-.main{
-    margin-left:340px;
-    width:100%;
-    padding:40px 70px;
+.sidebar .button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 10px 18px;
+    background: #0056b3;
+    color: #ffffff;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.sidebar .button:hover {
+    background: #003f82;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* ================= Main Content ================= */
+
+.main {
+    margin-left: 360px;
+    width: calc(100% - 360px);
+    padding: 32px 55px 60px 55px;
+    max-width: 1050px;
 }
 
 /* ================= Navigation ================= */
 
-nav{
-    position:sticky;
-    top:0;
-    background:white;
-    padding:18px 0;
-    border-bottom:1px solid #ddd;
-    z-index:100;
+nav {
+    position: sticky;
+    top: 0;
+    background: rgba(255,255,255,0.97);
+    padding: 12px 0 16px 0;
+    border-bottom: 1px solid #ddd;
+    z-index: 100;
 }
 
-nav a{
-    text-decoration:none;
-    color:#222;
-    margin-right:30px;
-    font-weight:600;
-    font-size:16px;
+nav a {
+    display: inline-block;
+    text-decoration: none;
+    color: #222;
+    margin-right: 26px;
+    font-weight: 600;
+    font-size: 15px;
 }
 
-nav a:hover{
-    color:#0056b3;
+nav a:hover {
+    color: #0056b3;
 }
 
 /* ================= Sections ================= */
 
-section{
-    margin-top:60px;
+section {
+    margin-top: 44px;
 }
 
-h2{
-    font-size:32px;
-    margin-bottom:20px;
-    color:#111;
+h2 {
+    font-size: 30px;
+    margin-bottom: 18px;
+    color: #111;
+    line-height: 1.25;
 }
 
-h3{
-    margin-top:30px;
-    margin-bottom:12px;
+h3 {
+    font-size: 20px;
+    margin-top: 26px;
+    margin-bottom: 10px;
+    color: #222;
 }
 
-ul{
-    padding-left:25px;
+p {
+    font-size: 16px;
+    margin-bottom: 16px;
 }
 
-li{
-    margin-bottom:10px;
+ul {
+    padding-left: 22px;
 }
 
-/* ================= Buttons ================= */
-
-.button{
-    display:inline-block;
-    padding:10px 20px;
-    background:#0056b3;
-    color:white;
-    text-decoration:none;
-    border-radius:6px;
-    margin-top:20px;
-}
-
-.button:hover{
-    background:#003f82;
+li {
+    margin-bottom: 7px;
+    font-size: 16px;
 }
 
 /* ================= Footer ================= */
 
-footer{
-    margin-top:80px;
-    border-top:1px solid #ddd;
-    padding-top:20px;
-    color:#777;
-    text-align:center;
+footer {
+    margin-top: 70px;
+    border-top: 1px solid #ddd;
+    padding-top: 18px;
+    color: #777;
+    text-align: center;
+    font-size: 14px;
 }
 
-/* ================= Mobile ================= */
+/* ================= Responsive ================= */
 
-@media(max-width:900px){
+@media (max-width: 900px) {
 
-.sidebar{
-    position:relative;
-    width:100%;
-    min-height:auto;
-    border-right:none;
-    border-bottom:1px solid #ddd;
-}
+    .container {
+        display: block;
+    }
 
-.main{
-    margin-left:0;
-    padding:30px;
-}
+    .sidebar {
+        position: relative;
+        width: 100%;
+        min-height: auto;
+        border-right: none;
+        border-bottom: 1px solid #ddd;
+        text-align: center;
+    }
 
-nav{
-    position:relative;
-}
+    .sidebar img {
+        width: 160px;
+        height: 160px;
+    }
 
-nav a{
-    display:inline-block;
-    margin-bottom:10px;
-}
+    .sidebar a {
+        display: inline-block;
+        margin: 5px 8px;
+    }
 
+    .sidebar .button {
+        display: inline-block;
+        margin-top: 12px;
+    }
+
+    .main {
+        margin-left: 0;
+        width: 100%;
+        padding: 25px;
+        max-width: none;
+    }
+
+    nav {
+        position: relative;
+        text-align: center;
+    }
+
+    nav a {
+        margin: 6px 10px;
+    }
+
+    h2 {
+        font-size: 26px;
+    }
+
+    p,
+    li {
+        font-size: 15px;
+    }
 }
