@@ -1,1 +1,186 @@
+/* =========================
+   Nishant Biyani Website
+========================= */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background:#ffffff;
+    color:#222;
+    line-height:1.7;
+}
+
+.container{
+    display:flex;
+    max-width:1400px;
+    margin:auto;
+}
+
+/* ================= Sidebar ================= */
+
+.sidebar{
+    width:300px;
+    min-height:100vh;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:40px 30px;
+    background:#fafafa;
+    border-right:1px solid #e5e5e5;
+}
+
+.sidebar img{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    margin-bottom:20px;
+}
+
+.sidebar h1{
+    font-size:30px;
+    margin-bottom:8px;
+}
+
+.sidebar h2{
+    font-size:18px;
+    color:#555;
+    font-weight:400;
+    margin-bottom:15px;
+}
+
+.sidebar p{
+    font-size:15px;
+    color:#555;
+    margin-bottom:10px;
+}
+
+.sidebar a{
+    display:block;
+    color:#0056b3;
+    text-decoration:none;
+    margin-bottom:10px;
+}
+
+.sidebar a:hover{
+    color:#d62828;
+}
+
+/* ================= Main ================= */
+
+.main{
+    margin-left:340px;
+    width:100%;
+    padding:40px 70px;
+}
+
+/* ================= Navigation ================= */
+
+nav{
+    position:sticky;
+    top:0;
+    background:white;
+    padding:18px 0;
+    border-bottom:1px solid #ddd;
+    z-index:100;
+}
+
+nav a{
+    text-decoration:none;
+    color:#222;
+    margin-right:30px;
+    font-weight:600;
+    font-size:16px;
+}
+
+nav a:hover{
+    color:#0056b3;
+}
+
+/* ================= Sections ================= */
+
+section{
+    margin-top:60px;
+}
+
+h2{
+    font-size:32px;
+    margin-bottom:20px;
+    color:#111;
+}
+
+h3{
+    margin-top:30px;
+    margin-bottom:12px;
+}
+
+ul{
+    padding-left:25px;
+}
+
+li{
+    margin-bottom:10px;
+}
+
+/* ================= Buttons ================= */
+
+.button{
+    display:inline-block;
+    padding:10px 20px;
+    background:#0056b3;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+    margin-top:20px;
+}
+
+.button:hover{
+    background:#003f82;
+}
+
+/* ================= Footer ================= */
+
+footer{
+    margin-top:80px;
+    border-top:1px solid #ddd;
+    padding-top:20px;
+    color:#777;
+    text-align:center;
+}
+
+/* ================= Mobile ================= */
+
+@media(max-width:900px){
+
+.sidebar{
+    position:relative;
+    width:100%;
+    min-height:auto;
+    border-right:none;
+    border-bottom:1px solid #ddd;
+}
+
+.main{
+    margin-left:0;
+    padding:30px;
+}
+
+nav{
+    position:relative;
+}
+
+nav a{
+    display:inline-block;
+    margin-bottom:10px;
+}
+
+}
