@@ -1,4 +1,4 @@
-/* =========================
+ /* =========================
    Nishant Biyani Website
 ========================= */
 
@@ -177,8 +177,6 @@ nav a {
 nav a:hover {
     color: #0056b3;
 }
-
-/* Active page styling */
 
 nav a.active {
     color: #0056b3;
