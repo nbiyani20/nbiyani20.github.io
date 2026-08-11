@@ -23,6 +23,7 @@ a {
     transition: 0.2s ease;
 }
 
+
 /* ================= Layout ================= */
 
 .container {
@@ -30,6 +31,7 @@ a {
     max-width: 1500px;
     margin: 0 auto;
 }
+
 
 /* ================= Sidebar ================= */
 
@@ -74,11 +76,8 @@ a {
 }
 
 .sidebar a {
-    display: block;
-    width: fit-content;
     color: #0056b3;
     text-decoration: none;
-    margin-bottom: 9px;
     font-size: 15px;
 }
 
@@ -87,12 +86,47 @@ a {
     text-decoration: underline;
 }
 
+
+/* ================= Profile Links ================= */
+
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    margin-top: 18px;
+}
+
+.profile-links a {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: fit-content;
+    color: #555;
+    text-decoration: none;
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.profile-links a i {
+    width: 28px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.profile-links a:hover {
+    color: #0056b3;
+    text-decoration: none;
+}
+
+
 /* ================= CV Button ================= */
 
 .sidebar .button,
 .button {
-    display: inline-block;
-    margin-top: 12px;
+    display: inline-flex;
+    align-items: center;
+    width: fit-content;
+    margin-top: 10px;
     padding: 10px 18px;
     background: #0056b3;
     color: #ffffff !important;
@@ -108,6 +142,7 @@ a {
     text-decoration: none !important;
 }
 
+
 /* ================= Main ================= */
 
 .main {
@@ -116,6 +151,7 @@ a {
     padding: 32px 55px 60px;
     max-width: 1050px;
 }
+
 
 /* ================= Navigation ================= */
 
@@ -142,11 +178,13 @@ nav a:hover {
     color: #0056b3;
 }
 
-/* Optional active-page styling */
+/* Active page styling */
+
 nav a.active {
     color: #0056b3;
     border-bottom: 2px solid #0056b3;
 }
+
 
 /* ================= Sections ================= */
 
@@ -187,6 +225,7 @@ li {
     font-size: 16px;
 }
 
+
 /* ================= Research / Project Entries ================= */
 
 section h3 {
@@ -197,6 +236,7 @@ section h3:not(:first-of-type) {
     border-top: 1px solid #eeeeee;
     padding-top: 24px;
 }
+
 
 /* ================= Publications ================= */
 
@@ -219,6 +259,7 @@ section h3:not(:first-of-type) {
     text-decoration: underline;
 }
 
+
 /* ================= General Links ================= */
 
 .main a {
@@ -229,12 +270,14 @@ section h3:not(:first-of-type) {
     color: #003f82;
 }
 
+
 /* ================= Resume iframe ================= */
 
 iframe {
     margin-top: 15px;
     background: #fff;
 }
+
 
 /* ================= Footer ================= */
 
@@ -247,7 +290,8 @@ footer {
     font-size: 14px;
 }
 
-/* ================= Responsive ================= */
+
+/* ================= Responsive / Mobile ================= */
 
 @media (max-width: 900px) {
 
@@ -269,14 +313,21 @@ footer {
         height: 160px;
     }
 
-    .sidebar a {
-        display: inline-block;
-        margin: 5px 8px;
+    .profile-links {
+        align-items: center;
+        gap: 12px;
+    }
+
+    .profile-links a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
     }
 
     .sidebar .button {
-        display: inline-block;
-        margin-top: 12px;
+        display: inline-flex;
+        margin-top: 10px;
     }
 
     .main {
@@ -307,30 +358,4 @@ footer {
     li {
         font-size: 15px;
     }
-.profile-links {
-    display: flex;
-    flex-direction: column;
-    gap: 18px;
-}
-
-.profile-links a {
-    display: flex;
-    align-items: center;
-    gap: 18px;
-    text-decoration: none;
-    color: #555;
-    font-size: 18px;
-}
-
-.profile-links a i {
-    width: 30px;
-    text-align: center;
-    font-size: 22px;
-}
-
-.profile-links a:hover {
-    color: #0077b5;
-}
-
-
 }
