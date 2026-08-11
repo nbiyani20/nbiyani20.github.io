@@ -1,6 +1,9 @@
-/* =========================
+ /* =========================
    Nishant Biyani Website
 ========================= */
+
+
+/* ================= Global Reset ================= */
 
 * {
     margin: 0;
@@ -15,7 +18,7 @@ html {
 body {
     font-family: Arial, Helvetica, sans-serif;
     background: #ffffff;
-    color: #222;
+    color: #222222;
     line-height: 1.75;
 }
 
@@ -24,7 +27,9 @@ a {
 }
 
 
-/* ================= Layout ================= */
+/* =====================================================
+   MAIN LAYOUT
+===================================================== */
 
 .container {
     display: flex;
@@ -33,51 +38,81 @@ a {
 }
 
 
-/* ================= Sidebar ================= */
+/* =====================================================
+   SIDEBAR
+===================================================== */
 
 .sidebar {
     width: 330px;
     min-height: 100vh;
+
     position: fixed;
     left: 0;
     top: 0;
+
     padding: 36px 28px;
+
     background: #fafafa;
     border-right: 1px solid #e5e5e5;
 }
 
-.sidebar img {
+
+/* ================= Profile Image ================= */
+
+.sidebar > img {
     width: 190px;
     height: 190px;
+
     border-radius: 50%;
     object-fit: cover;
+
     margin-bottom: 24px;
 }
+
+
+/* ================= Name ================= */
 
 .sidebar h1 {
     font-size: 29px;
     line-height: 1.2;
+
     margin-bottom: 10px;
-    color: #111;
+
+    color: #111111;
 }
+
+
+/* ================= Position ================= */
 
 .sidebar h2 {
     font-size: 17px;
-    color: #555;
+    color: #555555;
+
     font-weight: 400;
+
     margin-bottom: 16px;
 }
 
+
+/* ================= University Information ================= */
+
 .sidebar p {
     font-size: 15px;
-    color: #555;
+    color: #555555;
+
     line-height: 1.6;
+
     margin-bottom: 18px;
 }
 
+
+/* ================= Sidebar Links ================= */
+
 .sidebar a {
     color: #0056b3;
+
     text-decoration: none;
+
     font-size: 15px;
 }
 
@@ -87,65 +122,131 @@ a {
 }
 
 
-/* ================= Profile Links ================= */
+/* =====================================================
+   PROFILE LINKS
+===================================================== */
 
 .profile-links {
     display: flex;
     flex-direction: column;
+
     gap: 14px;
+
     margin-top: 18px;
 }
 
 .profile-links a {
     display: flex;
     align-items: center;
+
     gap: 14px;
+
     width: fit-content;
-    color: #555;
+
+    color: #555555;
+
     text-decoration: none;
+
     font-size: 16px;
 }
 
 .profile-links a i {
     width: 28px;
+
     text-align: center;
+
     font-size: 20px;
 }
 
 .profile-links a:hover {
     color: #0056b3;
+
     text-decoration: none;
 }
 
 
-/* ================= Main ================= */
+/* =====================================================
+   OPTIONAL BUTTON
+===================================================== */
+
+.sidebar .button,
+.button {
+    display: inline-flex;
+    align-items: center;
+
+    width: fit-content;
+
+    margin-top: 10px;
+
+    padding: 10px 18px;
+
+    background: #0056b3;
+
+    color: #ffffff !important;
+
+    border-radius: 5px;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+}
+
+.sidebar .button:hover,
+.button:hover {
+    background: #003f82;
+
+    color: #ffffff !important;
+
+    text-decoration: none !important;
+}
+
+
+/* =====================================================
+   MAIN CONTENT
+===================================================== */
 
 .main {
     margin-left: 360px;
+
     width: calc(100% - 360px);
+
     padding: 32px 55px 60px;
+
     max-width: 1050px;
 }
 
 
-/* ================= Navigation ================= */
+/* =====================================================
+   NAVIGATION
+===================================================== */
 
 nav {
     position: sticky;
+
     top: 0;
+
     background: rgba(255, 255, 255, 0.97);
+
     padding: 12px 0 16px;
-    border-bottom: 1px solid #ddd;
+
+    border-bottom: 1px solid #dddddd;
+
     z-index: 100;
 }
 
 nav a {
     display: inline-block;
+
     text-decoration: none;
-    color: #222;
+
+    color: #222222;
+
     margin-right: 20px;
+
     font-weight: 600;
+
     font-size: 15px;
+
     padding-bottom: 4px;
 }
 
@@ -155,11 +256,14 @@ nav a:hover {
 
 nav a.active {
     color: #0056b3;
+
     border-bottom: 2px solid #0056b3;
 }
 
 
-/* ================= Sections ================= */
+/* =====================================================
+   GENERAL SECTIONS
+===================================================== */
 
 section {
     margin-top: 44px;
@@ -169,37 +273,56 @@ section:first-of-type {
     margin-top: 38px;
 }
 
+
+/* ================= Headings ================= */
+
 h2 {
     font-size: 30px;
+
     margin-bottom: 18px;
-    color: #111;
+
+    color: #111111;
+
     line-height: 1.25;
 }
 
 h3 {
     font-size: 20px;
+
     margin-top: 30px;
     margin-bottom: 10px;
-    color: #222;
+
+    color: #222222;
 }
+
+
+/* ================= Paragraphs ================= */
 
 p {
     font-size: 16px;
+
     margin-bottom: 16px;
 }
 
+
+/* ================= Lists ================= */
+
 ul {
     padding-left: 22px;
+
     margin-bottom: 18px;
 }
 
 li {
     margin-bottom: 7px;
+
     font-size: 16px;
 }
 
 
-/* ================= Research / Project Entries ================= */
+/* =====================================================
+   RESEARCH / PROJECT ENTRIES
+===================================================== */
 
 section h3 {
     padding-top: 4px;
@@ -207,15 +330,20 @@ section h3 {
 
 section h3:not(:first-of-type) {
     border-top: 1px solid #eeeeee;
+
     padding-top: 24px;
 }
 
 
-/* ================= Publications ================= */
+/* =====================================================
+   PUBLICATIONS
+===================================================== */
 
 .publication {
     margin-bottom: 28px;
+
     padding-bottom: 22px;
+
     border-bottom: 1px solid #eeeeee;
 }
 
@@ -225,6 +353,7 @@ section h3:not(:first-of-type) {
 
 .publication a {
     color: #0056b3;
+
     text-decoration: none;
 }
 
@@ -233,7 +362,9 @@ section h3:not(:first-of-type) {
 }
 
 
-/* ================= General Links ================= */
+/* =====================================================
+   GENERAL MAIN LINKS
+===================================================== */
 
 .main a {
     color: #0056b3;
@@ -244,22 +375,32 @@ section h3:not(:first-of-type) {
 }
 
 
-/* ================= Resume iframe ================= */
+/* =====================================================
+   RESUME IFRAME
+===================================================== */
 
 iframe {
     margin-top: 15px;
-    background: #fff;
+
+    background: #ffffff;
 }
 
 
-/* ================= Footer ================= */
+/* =====================================================
+   FOOTER
+===================================================== */
 
 footer {
     margin-top: 70px;
-    border-top: 1px solid #ddd;
+
+    border-top: 1px solid #dddddd;
+
     padding-top: 18px;
-    color: #777;
+
+    color: #777777;
+
     text-align: center;
+
     font-size: 14px;
 }
 
@@ -270,159 +411,328 @@ footer {
 
 .education-section {
     margin-top: 45px;
+
     padding-bottom: 40px;
 }
 
+
+/* ================= Education Heading ================= */
+
 .education-title {
     text-align: center;
+
     font-size: 42px;
+
     font-weight: 700;
-    margin-bottom: 55px;
+
+    margin-bottom: 50px;
+
     color: #20242a;
 }
 
 
-/* ================= Education Card ================= */
+/* =====================================================
+   EDUCATION CARD
+===================================================== */
 
 .education-card {
     display: grid;
-    grid-template-columns: 110px 1fr;
-    gap: 24px;
+
+    grid-template-columns: 105px 1fr;
+
+    gap: 28px;
+
+    align-items: center;
+
+    width: 100%;
 
     background: #ffffff;
-    border: 1px solid #d9d9d9;
+
+    border: 1px solid #dedede;
+
     border-radius: 9px;
 
-    padding: 28px 30px;
+    padding: 30px 30px;
+
     margin-bottom: 36px;
 
-    box-shadow: 0 18px 35px rgba(0, 0, 0, 0.16);
+    box-shadow:
+        0 16px 32px rgba(0, 0, 0, 0.13);
+
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
 }
 
 
-/* ================= Education Logos ================= */
+/* ================= Card Hover ================= */
+
+.education-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.16);
+}
+
+
+/* =====================================================
+   EDUCATION LOGOS
+===================================================== */
 
 .education-logo-image {
     width: 100px;
+
     min-width: 100px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: center;
 }
 
+
+/*
+   IMPORTANT:
+   This preserves the original proportions of each logo.
+   Useful because Northeastern, BIT, Kautilya and Mayoor
+   logos have different shapes.
+*/
+
 .education-logo-image img {
-    width: 88px;
-    height: 88px;
+    max-width: 90px;
+
+    max-height: 90px;
+
+    width: auto;
+
+    height: auto;
+
     object-fit: contain;
+
+    display: block;
 }
 
 
-/* ================= Education Content ================= */
+/* =====================================================
+   EDUCATION CONTENT
+===================================================== */
 
 .education-content {
     width: 100%;
+
+    min-width: 0;
 }
 
+
+/* ================= University / School Name ================= */
+
 .education-content h3 {
-    margin: 0 0 2px 0 !important;
+    margin: 0 0 3px 0 !important;
+
     padding: 0 !important;
+
     border: none !important;
 
-    font-size: 26px;
+    font-size: 24px;
+
     font-weight: 700;
+
     line-height: 1.25;
+
     color: #171b21;
 }
 
+
+/* ================= Location ================= */
+
 .education-location {
-    font-size: 17px;
-    color: #525b66;
+    font-size: 16px !important;
+
+    color: #666666;
+
     margin-bottom: 12px !important;
 }
 
 
-/* ================= Education Header ================= */
+/* =====================================================
+   EDUCATION HEADER
+   University name on left / GPA on right
+===================================================== */
 
 .education-header {
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-start;
-    gap: 30px;
+
+    gap: 25px;
 }
 
 .education-right {
     white-space: nowrap;
+
     text-align: right;
+
     font-size: 16px;
-    color: #4c5560;
+
+    color: #333333;
 }
 
 
-/* ================= Degree Row ================= */
+/* =====================================================
+   DEGREE ROW
+   Degree on left / Date on right
+===================================================== */
 
 .degree-row {
     display: flex;
+
     justify-content: space-between;
+
     align-items: flex-start;
-    gap: 30px;
+
+    gap: 25px;
+
     margin-top: 8px;
 }
 
 .degree-row p {
-    margin-bottom: 2px;
+    margin-bottom: 3px;
 }
 
 .degree-row > p:first-child {
-    font-size: 18px;
-    line-height: 1.35;
+    font-size: 17px;
+
+    line-height: 1.4;
+
+    color: #222222;
 }
+
+
+/* ================= Education Date ================= */
 
 .education-date {
     white-space: nowrap;
+
     text-align: right;
+
     font-size: 16px !important;
-    color: #4c5560;
+
+    color: #555555;
 }
 
 
-/* ================= Education Description ================= */
+/* =====================================================
+   EDUCATION DESCRIPTION
+===================================================== */
 
 .education-content > p {
-    font-size: 17px;
+    font-size: 16px;
+
     line-height: 1.55;
-    margin-bottom: 4px;
+
+    margin-bottom: 5px;
+
+    color: #333333;
 }
 
 .education-content strong {
     font-weight: 600;
+
+    color: #222222;
 }
 
 
-/* ================= Responsive / Mobile ================= */
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 1100px) {
+
+    .main {
+        padding-left: 35px;
+
+        padding-right: 35px;
+    }
+
+    nav a {
+        margin-right: 14px;
+
+        font-size: 14px;
+    }
+
+    .education-card {
+        grid-template-columns: 90px 1fr;
+
+        gap: 22px;
+
+        padding: 26px;
+    }
+
+    .education-logo-image {
+        width: 85px;
+
+        min-width: 85px;
+    }
+
+    .education-logo-image img {
+        max-width: 80px;
+
+        max-height: 80px;
+    }
+
+    .education-content h3 {
+        font-size: 22px;
+    }
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
 
 @media (max-width: 900px) {
+
+
+    /* ================= Main Layout ================= */
 
     .container {
         display: block;
     }
 
+
+    /* ================= Sidebar ================= */
+
     .sidebar {
         position: relative;
+
         width: 100%;
+
         min-height: auto;
+
         border-right: none;
-        border-bottom: 1px solid #ddd;
+
+        border-bottom: 1px solid #dddddd;
+
         text-align: center;
+
+        padding: 30px 20px;
     }
 
-    .sidebar img {
+    .sidebar > img {
         width: 160px;
+
         height: 160px;
     }
 
+
+    /* ================= Profile Links ================= */
+
     .profile-links {
         align-items: center;
+
         gap: 12px;
     }
 
@@ -430,21 +740,36 @@ footer {
         justify-content: center;
     }
 
+
+    /* ================= Main ================= */
+
     .main {
         margin-left: 0;
+
         width: 100%;
-        padding: 25px;
+
         max-width: none;
+
+        padding: 25px;
     }
+
+
+    /* ================= Navigation ================= */
 
     nav {
         position: relative;
+
         text-align: center;
     }
 
     nav a {
-        margin: 6px 10px;
+        margin: 6px 9px;
+
+        font-size: 14px;
     }
+
+
+    /* ================= General Text ================= */
 
     h2 {
         font-size: 26px;
@@ -459,28 +784,57 @@ footer {
         font-size: 15px;
     }
 
+
+    /* =================================================
+       EDUCATION MOBILE
+    ================================================= */
+
+    .education-section {
+        margin-top: 35px;
+    }
+
     .education-title {
         font-size: 34px;
+
         margin-bottom: 35px;
     }
 
+
+    /* ================= Education Card ================= */
+
     .education-card {
         grid-template-columns: 1fr;
-        padding: 24px 20px;
+
         gap: 18px;
+
+        padding: 25px 22px;
+
+        margin-bottom: 28px;
     }
+
+
+    /* ================= Education Logo ================= */
 
     .education-logo-image {
         width: 100%;
+
+        min-width: 0;
+
+        justify-content: center;
     }
 
     .education-logo-image img {
-        width: 80px;
-        height: 80px;
+        max-width: 85px;
+
+        max-height: 85px;
     }
+
+
+    /* ================= Education Header ================= */
 
     .education-header {
         flex-direction: column;
+
         gap: 4px;
     }
 
@@ -488,20 +842,89 @@ footer {
         text-align: left;
     }
 
+
+    /* ================= Degree Row ================= */
+
     .degree-row {
         flex-direction: column;
-        gap: 4px;
+
+        gap: 2px;
+
+        margin-top: 10px;
     }
 
     .education-date {
         text-align: left;
     }
 
+
+    /* ================= Education Text ================= */
+
     .education-content h3 {
         font-size: 22px;
     }
 
     .education-content > p {
+        font-size: 15px;
+    }
+
+    .education-location {
+        font-size: 15px !important;
+    }
+
+}
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+@media (max-width: 500px) {
+
+    .main {
+        padding: 18px;
+    }
+
+    .sidebar {
+        padding: 25px 18px;
+    }
+
+    .sidebar > img {
+        width: 140px;
+
+        height: 140px;
+    }
+
+    nav a {
+        margin: 5px 6px;
+
+        font-size: 13px;
+    }
+
+    .education-title {
+        font-size: 30px;
+
+        margin-bottom: 28px;
+    }
+
+    .education-card {
+        padding: 22px 18px;
+
+        border-radius: 8px;
+    }
+
+    .education-logo-image img {
+        max-width: 75px;
+
+        max-height: 75px;
+    }
+
+    .education-content h3 {
+        font-size: 20px;
+    }
+
+    .degree-row > p:first-child {
         font-size: 16px;
     }
+
 }
