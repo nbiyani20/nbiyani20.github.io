@@ -307,4 +307,30 @@ footer {
     li {
         font-size: 15px;
     }
+.profile-links {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.profile-links a {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    text-decoration: none;
+    color: #555;
+    font-size: 18px;
+}
+
+.profile-links a i {
+    width: 30px;
+    text-align: center;
+    font-size: 22px;
+}
+
+.profile-links a:hover {
+    color: #0077b5;
+}
+
+
 }
